@@ -1,0 +1,19 @@
+[project]
+name = "discord-voice-bot"
+version = "0.1.0"
+description = "A Discord bot with automatic voice capture, Whisper STT, Ollama LLM, and Kokoro TTS."
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+dependencies = [
+    "discord.py>=2.4.0",
+    "discord-ext-audiorec",
+    "openai-whisper",
+    "soundfile",
+    "numpy",
+    "requests",
+    "kokoro-tts"
+]
+
+[project.scripts]
+discord-voice-bot = "bot.main:run_bot"
